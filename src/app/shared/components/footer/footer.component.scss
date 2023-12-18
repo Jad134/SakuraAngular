@@ -1,0 +1,20 @@
+section{
+    height: 144px;
+    background-color: #0A141E;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.logo{
+    height: 44px;
+}
+
+.social-media{
+    gap:8px;
+    display: flex;
+    >img{
+        width: 40px;
+        height: 40px;
+    }
+}
