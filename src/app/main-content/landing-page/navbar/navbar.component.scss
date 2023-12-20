@@ -1,10 +1,19 @@
+@mixin border($bStyle){
+    border-radius: 10px;
+    border: 2px $bStyle white;
+}
+
+@mixin dFlex($jc, $aI: center){
+    display: flex;
+    justify-content: $jc;
+    align-items:  $aI;
+
+}
 nav {
     width: 100%;
     height: 112px;
    // padding: 32px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+   @include dFlex(space-around);
     position: absolute;
     top: 0;
     font-size: 24px;
@@ -38,8 +47,8 @@ a{
     padding-inline: 20px;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    border: 2px solid white;
+    @include border(solid);
+   
 
     >img{
         width: 32px;
